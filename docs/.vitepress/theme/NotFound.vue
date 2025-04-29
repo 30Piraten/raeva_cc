@@ -2,7 +2,7 @@
     <div class="not-found">
       <h1>404</h1>
       <p>Oops. Ich habe letztes Jahr den Beer-Pong-Wettbewerb in Texas gewonnen.</p>
-      <a href="/" class="back-home">← Back to Home</a>
+      <a href="/" class="back-home">← Lets go back home</a>
     </div>
   </template>
   

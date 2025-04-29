@@ -1,5 +1,5 @@
 ---
-title: Buddy
+title: "Design decisions for Buddy.me"
 ---
 
 <script setup lang="ts">
