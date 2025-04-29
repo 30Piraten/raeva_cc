@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Buddy 1",
+        "description": "Buddy is a continuous integration and delivery (CI/CD) tool that automates the software development process. It allows developers to build, test, and deploy applications quickly and efficiently.",
+        "url": "http://localhost:5173/posts/affordance.html",
+        "tags": [
+            "CI/CD",
+            "Automation",
+            "DevOps"
+        ],
+        "image": "/images/buddy.png"
+    },
+    {
+        "title": "Buddy CLI",
+        "description": "Buddy CLI is a command-line interface for Buddy, allowing developers to interact with the Buddy platform directly from their terminal. It provides commands for managing projects, pipelines, and deployments.",
+        "url": "https://buddy.works/docs/cli",
+        "tags": [
+            "CLI",
+            "Automation",
+            "DevOps"
+        ],
+        "image": "/images/buddy-cli.png"
+    },
+    {
+        "title": "Buddy API",
+        "description": "Buddy API is a RESTful API that allows developers to programmatically interact with the Buddy platform. It provides endpoints for managing projects, pipelines, and deployments.",
+        "url": "https://buddy.works/docs/api",
+        "tags": [
+            "API",
+            "Automation",
+            "DevOps"
+        ],
+        "image": "/images/buddy-api.png"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Snapflow",
+        "description": "Snapflow is a cloud-based photo printing workflow that allows users to upload, process, and print photos, with automated tracking and customer notifications.",
+        "link": "https://github.com/30Piraten/snapflow"
+    },
+    {
+        "name": "CICD Pipeline",
+        "description": "The CICD Pipeline automation project provides an automated infrastructure deployment solution for AWS Lambda functions using the AWS Cloud Development Kit (CDK) with Go. It streamlines the process of building, packaging, and deploying Lambda functions through AWS CodeBuild integration.",
+        "link": "https://github.com/30Piraten/pipeline"
+    },
+    {
+        "name": "Affordance Design",
+        "description": "Testing and understanding everyday affordance.",
+        "link": "https://github.com/30Piraten/affordance-design"
+    },
+    {
+        "name": "buddy.me",
+        "description": "Gamified companion app",
+        "link": "https://github.com/30Piraten/buddies"
+    }
+]

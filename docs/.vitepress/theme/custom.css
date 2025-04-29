@@ -1,0 +1,86 @@
+/* shared.css */
+
+:root {
+  /* Brand accent */
+  --color-accent: #fdc57b;
+  --color-accent-light: rgb(22, 22, 180);
+
+  /* Light Theme Colors */
+  --color-bg-light: white;
+  --color-surface-light: #e9e2d0;
+  --color-text-light: #1e1e1e;
+  --color-muted-light: #a9877f;
+  --color-border-light: #d63a3a;
+
+  /* Dark Theme Colors */
+  --color-bg-dark: #1c1f22;
+  --color-surface-dark: #2c2f33;
+  --color-text-dark: #f0f0f0;
+  --color-muted-dark: #7fa99b;
+  --color-border-dark: #3e4a50;
+}
+
+:root {
+  --vp-font-family-base: "Rubik", sans-serif;
+
+  --vp-c-brand: var(--color-accent-light); 
+  --vp-c-brand-light: var(--color-accent-light);
+  --vp-c-brand-dark: var(--color-accent-light);
+
+  --vp-c-bg: var(--color-bg-light);
+  --vp-c-bg-soft: var(--color-surface-light);
+  --vp-c-bg-mute: var(--color-accent-light);
+
+  --vp-c-text-1: var(--color-text-light);
+  --vp-c-text-2: #1b1313;
+  --vp-c-text-3: #5f5f5f;
+
+  --vp-c-border: var(--color-border-light);
+  --vp-c-divider: #dcd6bc;
+
+  .external-link {
+    color: var(--color-text-light);
+  }
+  .external-link:hover {
+    color: var(--color-accent-light);
+  }
+}
+
+.dark {
+  --vp-c-brand: var(--color-accent);
+  --vp-c-brand-light: var(--color-accent);
+  --vp-c-brand-dark: var(--color-extra-light);
+
+  --vp-c-bg: var(--color-bg-dark);
+  --vp-c-bg-soft: var(--color-surface-dark);
+  --vp-c-bg-mute: var(--color-accent);
+
+  --vp-c-text-1: var(--color-text-dark);
+  --vp-c-text-2: #bbbbbb;
+  --vp-c-text-3: #888888;
+
+  --vp-c-border: var(--color-border-dark);
+  --vp-c-divider: #49555a;
+
+  .external-link {
+    color: white;
+  }
+  .external-link:hover {
+    color: var(--color-accent);
+  }
+}
+
+.vp-hero {
+  background-color: #ede4c8;
+  color: #1c1c1c;
+}
+
+.vp-hero {
+  background: linear-gradient(to right, #fdc57b, #fbf2d5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
