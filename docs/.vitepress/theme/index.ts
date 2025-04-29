@@ -1,9 +1,10 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css' 
+import NotFound from './NotFound.vue'
 
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
-    // Register components or do other app-level customizations
-  }
+  },
+  NotFound
 }

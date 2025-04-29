@@ -6,7 +6,7 @@ export default defineConfig({
   description: "systems-minded product and infrastructure engineer",
 
   lastUpdated: true,
-  outDir: "dist",
+  outDir: "/dist",
 
 
 //   <link rel="icon" type="image/png" href="/rayvah/favicon-96x96.png" sizes="96x96" />
@@ -31,6 +31,7 @@ export default defineConfig({
       },
     ],
   ],
+// 
 
   themeConfig: {
     logo: "/logo.png",
