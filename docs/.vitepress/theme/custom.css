@@ -6,7 +6,7 @@
   --color-accent-light: rgb(22, 22, 180);
 
   /* Light Theme Colors */
-  --color-bg-light: white;
+  --color-bg-light: #ececec;
   --color-surface-light: #e9e2d0;
   --color-text-light: #1e1e1e;
   --color-muted-light: #a9877f;
@@ -97,11 +97,11 @@
   transform: translateY(0px) scale(0.98);
 }
 
-  .external-link {
-    color: var(--color-text-light);
-  }
-  .external-link:hover {
-    color: var(--color-accent-light);
+.external-link {
+  color: var(--color-text-light);
+}
+.external-link:hover {
+  color: var(--color-accent-light);
   }
 }
 
@@ -178,7 +178,7 @@
   background-color: rgba(253, 197, 123, 0.2);
   border-color: #d6a04a;
   color: #d6a04a;
-} */
+} 
 
 .external-link {
     color: white;
