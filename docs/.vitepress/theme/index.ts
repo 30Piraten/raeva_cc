@@ -6,5 +6,7 @@ export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
   },
-  NotFound
+  NotFound,
+  themeConfig: {
+  },
 }

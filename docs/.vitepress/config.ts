@@ -1,5 +1,69 @@
 import { defineConfig } from "vitepress";
 
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+// Create __dirname equivalent in ES modules
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+// Type definitions for sidebar items
+interface SidebarItem {
+  text: string;
+  link: string;
+}
+
+// Type for sidebar structure
+interface Sidebar {
+  [path: string]: SidebarGroup[];
+}
+
+interface SidebarGroup {
+  text?: string;
+  items: SidebarItem[];
+}
+
+// Generate sidebar data for posts
+function getPostsSidebar(dir: string = 'posts'): SidebarGroup[] {
+  const postsDir = path.resolve(__dirname, '..', dir)
+  
+  // Check if directory exists
+  if (!fs.existsSync(postsDir)) {
+    console.warn(`Posts directory not found: ${postsDir}`)
+    return []
+  }
+  
+  // Get all markdown files and convert to sidebar items
+  const files = fs
+    .readdirSync(postsDir)
+    .filter(file => file.endsWith('.md'))
+    .map(file => ({
+      text: getTitleFromFile(path.resolve(postsDir, file)),
+      link: `/${dir}/${file.replace('.md', '')}`,
+    }))
+
+  // Return in the correct format VitePress expects
+  return [
+    {
+      text: 'Posts',
+      items: files
+    }
+  ]
+}
+
+function getTitleFromFile(filepath: string): string {
+  try {
+    const content = fs.readFileSync(filepath, 'utf-8')
+    const match = content.match(/^title:\s*(.+)$/m) || content.match(/^#\s+(.+)$/m)
+    return match ? match[1].replace(/['"]/g, '') : path.basename(filepath, '.md')
+  } catch (err) {
+    console.warn(`Error reading file ${filepath}:`, err)
+    return path.basename(filepath, '.md')
+  }
+}
+
+
+// CONFIG DEFINITIONS
 export default defineConfig({
   lang: "en-US",
   title: "rayvah.cc",
@@ -8,6 +72,7 @@ export default defineConfig({
   lastUpdated: true,
   outDir: "/dist",
 
+  ignoreDeadLinks: true,
 
 //   <link rel="icon" type="image/png" href="/rayvah/favicon-96x96.png" sizes="96x96" />
 //   <link rel="icon" type="image/svg+xml" href="/rayvah/favicon.svg" />
@@ -31,7 +96,6 @@ export default defineConfig({
       },
     ],
   ],
-// 
 
   themeConfig: {
     logo: "/logo.png",
@@ -55,10 +119,13 @@ export default defineConfig({
       copyright: "Copyright ©️ 2025–present | raeva",
     },
 
+    sidebar: {
+      "/posts/": getPostsSidebar(),
+    },
+
     search: {
       provider: "local",
     },
   },
 
-  ignoreDeadLinks: true,
-});
+})

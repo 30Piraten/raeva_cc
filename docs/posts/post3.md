@@ -3,12 +3,6 @@ title: "How I Built My Blog with VitePress 3"
 description: "A guide to setting up a fast blog using VitePress."
 date: 2025-04-28
 tags: ["vitepress", "vue", "blogging", "setup"]
-prev:
-  text: "Design groups"
-  link: "/posts/design"
-next:
-  text: "Post 5"
-  link: "/posts/post5"
 ---
 
 # How I Built My Blog with VitePress
