@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "strict": true,
+      "module": "ESNext",
+      "target": "ESNext",
+      "moduleResolution": "Node",
+      "jsx": "preserve",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": ["docs", "vite-env.d.ts"]
+  }

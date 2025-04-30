@@ -4,7 +4,9 @@ layout: home
 hero:
     name: Victor Raeva!
     text: "I'm a Systems-minded product & infra engineer"
+    tagline: "I like systems + design + infra, yeah that's it."
     image: "/meme-modified.png"
+    alt: "Victor Raeva"
     actions:
     - theme: brand
       text: Linkedin Profile

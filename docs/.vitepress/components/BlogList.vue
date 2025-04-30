@@ -42,7 +42,7 @@ const posts: Post[] = postFiles.map(([path, rawContent]) => {
     date: frontmatter.date || '',
   };
 })
-.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Newest first
+.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Okay, get newest first
 
 </script>
 

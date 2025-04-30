@@ -19,5 +19,8 @@
         "@algolia/client-search"
       ]
     }
+  },
+  "dependencies": {
+    "@iconify/vue": "^4.3.0"
   }
 }
