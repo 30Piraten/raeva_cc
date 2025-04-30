@@ -6,6 +6,9 @@ import ExternalLink from "./ExternalLink.vue";
 const gitLabUserID = import.meta.env.VITE_GITLAB_USER_ID;
 const projectId = import.meta.env.VITE_GITLAB_PROJECT_ID;
 
+console.log("GitLab user ID:", gitLabUserID);
+console.log("GitLab project ID:", projectId);
+
 const { 
   mergeRequests,
   issues,
