@@ -3,8 +3,9 @@ import { onMounted } from "vue";
 import { useGitLab } from "../composables/useGitLab";
 import ExternalLink from "./ExternalLink.vue";
 
-const gitLabUserID = "18525836";
-const projectId = "278964";
+const gitLabUserID = import.meta.env.VITE_GITLAB_USER_ID;
+const projectId = import.meta.env.VITE_GITLAB_PROJECT_ID;
+
 const { 
   mergeRequests,
   issues,
