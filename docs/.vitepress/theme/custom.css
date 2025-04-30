@@ -39,6 +39,11 @@
   --vp-c-divider: #dcd6bc;
 
 
+  /* Footer - LIGHT */
+.VPFooter {
+  background-color: white;
+}
+
   /* LinkedIn button (brand) */
 .VPButton.medium.brand {
   background-color: var(--color-accent-light);
@@ -120,6 +125,12 @@
 
   --vp-c-border: var(--color-border-dark);
   --vp-c-divider: #49555a;
+
+
+  /* Footer - LIGHT */
+.VPFooter {
+  background-color: white;
+}
 
   /* VPBUTTON TOKENS -- DARK */
   /* LinkedIn button (brand) */
