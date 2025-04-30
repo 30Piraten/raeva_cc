@@ -99,7 +99,7 @@ export function useContactForm() {
         const response = await fetch('/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: formData
+          body: formData.toString(),
         });
         
         if (response.ok) {
