@@ -38,75 +38,78 @@
   --vp-c-border: var(--color-border-light);
   --vp-c-divider: #dcd6bc;
 
+    /* Footer - LIGHT */
+  /* .VPFooter {
+    background-color: white;
+  } */
 
-  /* Footer - LIGHT */
-/* .VPFooter {
-  background-color: white;
-} */
+    /* LinkedIn button (brand) */
+  .VPButton.medium.brand {
+    background-color: var(--color-accent-light);
+    color: var(--color-text-dark);
+    border: 2px solid rgb(17, 17, 195);
+  }
 
-  /* LinkedIn button (brand) */
-.VPButton.medium.brand {
-  background-color: var(--color-accent-light);
-  color: var(--color-text-dark);
-  border: 2px solid rgb(17, 17, 195);
-}
+  .VPButton.medium.brand:hover {
+    background-color: white;
+    color: var(--color-bg-dark);
+  }
 
-.VPButton.medium.brand:hover {
-  background-color: white;
-  color: var(--color-bg-dark);
-}
+  .VPButton.medium.brand:active {
+    background-color: rgb(33, 33, 195);
+  }
 
-.VPButton.medium.brand:active {
-  background-color: rgb(33, 33, 195);
-}
+  /* GitHub button (alt) */
+  .VPButton.medium.alt {
+    background-color: transparent;
+    border: 2px solid rgb(33, 33, 195);
+    color: var(--color-bg-dark);
+  }
 
-/* GitHub button (alt) */
-.VPButton.medium.alt {
-  background-color: transparent;
-  border: 2px solid rgb(33, 33, 195);
-  color: var(--color-bg-dark);
-}
+  .VPButton.medium.alt:hover {
+    background-color: var(--color-accent-light);
+    border-color: rgb(33, 33, 195);
+    color: var(--color-bg-light);
+  }
 
-.VPButton.medium.alt:hover {
-  background-color: var(--color-accent-light);
-  border-color: rgb(33, 33, 195);
-  color: var(--color-bg-light);
-}
+  .VPButton.medium.alt:active {
+    background-color: rgb(144, 162, 214);
+    border-color: rgb(33, 33, 195);
+    color: var(--color-bg-dark);
+  }
 
-.VPButton.medium.alt:active {
-  background-color: rgb(144, 162, 214);
-  border-color: rgb(33, 33, 195);
-  color: var(--color-bg-dark);
-}
+  /* animation for button */
+  /* Shared button transition */
+  .VPButton.medium.brand,
+  .VPButton.medium.alt {
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease,
+      border-color 0.25s ease,
+      transform 0.15s ease;
+  }
 
-/* animation for button */
-/* Shared button transition */
-.VPButton.medium.brand,
-.VPButton.medium.alt {
-  transition:
-    background-color 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.15s ease;
-}
+  /* Optional: slight lift on hover */
+  .VPButton.medium.brand:hover,
+  .VPButton.medium.alt:hover {
+    transform: translateY(-1px);
+  }
 
-/* Optional: slight lift on hover */
-.VPButton.medium.brand:hover,
-.VPButton.medium.alt:hover {
-  transform: translateY(-1px);
-}
+  /* Optional: slight press on active */
+  .VPButton.medium.brand:active,
+  .VPButton.medium.alt:active {
+    transform: translateY(0px) scale(0.98);
+  }
 
-/* Optional: slight press on active */
-.VPButton.medium.brand:active,
-.VPButton.medium.alt:active {
-  transform: translateY(0px) scale(0.98);
-}
+  .external-link {
+    color: var(--color-text-light);
+  }
+  .external-link:hover {
+    color: var(--color-accent-light);
+  }
 
-.external-link {
-  color: var(--color-text-light);
-}
-.external-link:hover {
-  color: var(--color-accent-light);
+  span.link-text:hover, a.outline-link:hover {
+    color: var(--color-accent-light);
   }
 }
 
@@ -128,92 +131,96 @@
 
 
   /* Footer - DARK */
-/* .VPFooter {
-  background-color: white;
-} */
+  /* .VPFooter {
+    background-color: white;
+  } */
 
-  /* VPBUTTON TOKENS -- DARK */
-  /* LinkedIn button (brand) */
-.VPButton.medium.brand {
-  background-color: #fdc57b;
-  color: #1c1c1c;
-  border: 2px solid #fdc57b;
-}
+    /* VPBUTTON TOKENS -- DARK */
+    /* LinkedIn button (brand) */
+  .VPButton.medium.brand {
+    background-color: #fdc57b;
+    color: #1c1c1c;
+    border: 2px solid #fdc57b;
+  }
 
-.VPButton.medium.brand:hover {
-  background-color: #fdd694;
-  color: #000;
-}
+  .VPButton.medium.brand:hover {
+    background-color: #fdd694;
+    color: #000;
+  }
 
-.VPButton.medium.brand:active {
-  background-color: #d6a04a;
-}
+  .VPButton.medium.brand:active {
+    background-color: #d6a04a;
+  }
 
-/* GitHub button (alt) */
-.VPButton.medium.alt {
-  background-color: transparent;
-  border: 2px solid #fdc57b;
-  color: #fdc57b;
-}
+  /* GitHub button (alt) */
+  .VPButton.medium.alt {
+    background-color: transparent;
+    border: 2px solid #fdc57b;
+    color: #fdc57b;
+  }
 
-/* animation for button */
-/* Shared button transition */
-.VPButton.medium.brand,
-.VPButton.medium.alt {
-  transition:
-    background-color 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.15s ease;
-}
+  /* animation for button */
+  /* Shared button transition */
+  .VPButton.medium.brand,
+  .VPButton.medium.alt {
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease,
+      border-color 0.25s ease,
+      transform 0.15s ease;
+  }
 
-/* Optional: slight lift on hover */
-.VPButton.medium.brand:hover,
-.VPButton.medium.alt:hover {
-  transform: translateY(-1px);
-}
+  /* Optional: slight lift on hover */
+  .VPButton.medium.brand:hover,
+  .VPButton.medium.alt:hover {
+    transform: translateY(-1px);
+  }
 
-/* Optional: slight press on active */
-.VPButton.medium.brand:active,
-.VPButton.medium.alt:active {
-  transform: translateY(0px) scale(0.98);
-}
+  /* Optional: slight press on active */
+  .VPButton.medium.brand:active,
+  .VPButton.medium.alt:active {
+    transform: translateY(0px) scale(0.98);
+  }
 
-.VPButton.medium.alt:hover {
-  background-color: rgba(253, 197, 123, 0.1);
-  border-color: #fdd694;
-  color: #fdd694;
-}
+  .VPButton.medium.alt:hover {
+    background-color: rgba(253, 197, 123, 0.1);
+    border-color: #fdd694;
+    color: #fdd694;
+  }
 
-.VPButton.medium.alt:active {
-  background-color: rgba(253, 197, 123, 0.2);
-  border-color: #d6a04a;
-  color: #d6a04a;
-} 
+  .VPButton.medium.alt:active {
+    background-color: rgba(253, 197, 123, 0.2);
+    border-color: #d6a04a;
+    color: #d6a04a;
+  } 
 
-.external-link {
+  .external-link {
     color: white;
-}
-.external-link:hover {
+  }
+  .external-link:hover {
+    color: var(--color-accent);
+  }
+  .vp-hero {
+    background-color: #ede4c8;
+    color: #1c1c1c;
+  }
+  
+  .vp-hero {
+    background: linear-gradient(to right, #fdc57b, #fbf2d5);
+  }  
+
+  span.link-text:hover, a.outline-link:hover {
     color: var(--color-accent);
   }
 }
 
-.vp-hero {
-  background-color: #ede4c8;
-  color: #1c1c1c;
-}
 
-.vp-hero {
-  background: linear-gradient(to right, #fdc57b, #fbf2d5);
-}
-
+/* Global styles */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* p {
   font-size: 1em;
-} */
+  } */

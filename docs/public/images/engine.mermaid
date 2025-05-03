@@ -1,0 +1,9 @@
+graph TD
+  A[Frontend: React/Vue] --> B[Backend API (Go)]
+  B --> C[Roadmap Engine (Go)]
+  B --> D[Activity Logger (PostgreSQL)]
+  B --> E[Checkpoint Trigger]
+  E --> F[Inference Engine (Python)]
+  F --> G[Matchmaker (Go or Python)]
+  G --> H[Notify & Merge Roadmaps]
+  F -->|Periodically| M[User Embeddings Table (PostgreSQL)]

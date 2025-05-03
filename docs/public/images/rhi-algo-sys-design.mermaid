@@ -1,0 +1,33 @@
+graph TD
+  A[User] --> B[Frontend React TS]
+  B --> C1[Join Roadmap]
+  B --> C2[Complete Quest]
+  C2 --> D1[Check-in + Action Log]
+  D1 --> E[Backend API Go]
+
+  E --> F1[Roadmap Engine]
+  E --> F2[Checkpoint Evaluator]
+  E --> F3[User Trait Cache Redis]
+
+  F1 --> G[PostgreSQL]
+  F2 --> H[Inference Engine Python]
+
+  H --> I1[Scoring Engine rule-based]
+  H --> I2[Matcher Similarity Logic]
+  I2 --> J[Matched User]
+
+  J --> K1[Merge Roadmaps]
+  K1 --> K2[Shared Checkpoint Loop]
+  K2 --> L[Buddy Journey Continues]
+
+  subgraph Services
+    E
+    F1
+    F2
+    H
+  end
+
+  subgraph DataStores
+    G
+    F3
+  end
