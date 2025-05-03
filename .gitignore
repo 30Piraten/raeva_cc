@@ -25,4 +25,4 @@ dist-ssr
 
 */*.env
 */.env 
-docs/.vitepress/.env
+docs/.env
