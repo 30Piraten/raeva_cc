@@ -207,10 +207,46 @@
   
   .vp-hero {
     background: linear-gradient(to right, #fdc57b, #fbf2d5);
-  }  
+  }
 
-  span.link-text:hover, a.outline-link:hover {
+  p.text:hover {
     color: var(--color-accent);
+  }
+
+  /* Base styles for all sidebar levels */
+  .VPSidebarItem[class*="level-"] .text[data-v-6a08edb6] {
+    font-weight: 500;
+    color: var(--color-text-dark);
+  }
+
+  /* Hover styles for all sidebar levels */
+  .VPSidebarItem[class*="level-"] .text[data-v-6a08edb6]:hover {
+    color: var(--color-accent) !important;
+  }
+
+  VPSidebarItem.level-0.is-active > .item .link > .text[data-v-6a08edb6],
+  .VPSidebarItem.level-1.is-active > .item .link > .text[data-v-6a08edb6],
+  .VPSidebarItem.level-2.is-active > .item .link > .text[data-v-6a08edb6],
+  .VPSidebarItem.level-3.is-active > .item .link > .text[data-v-6a08edb6],
+  .VPSidebarItem.level-4.is-active > .item .link > .text[data-v-6a08edb6],
+  .VPSidebarItem.level-5.is-active > .item .link > .text[data-v-6a08edb6] {
+    color: var(--color-accent);
+  }
+
+  a.outline-link[data-v-6f596f9f]:hover {
+    color: var(--color-accent);
+  }
+
+  .VPNavBarMenuLink[data-v-30392939]:hover {
+    color: var(--color-accent);
+  }
+
+  button.DocSearch.DocSearch-Button:hover {
+    border: 1px solid var(--color-accent);
+  }
+
+  .search-bar[data-v-2c3537cd] {
+    color: var(--color-text-dark);
   }
 }
 
