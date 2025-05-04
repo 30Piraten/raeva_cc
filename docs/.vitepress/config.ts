@@ -71,10 +71,11 @@ export default defineConfig({
 
   lastUpdated: true,
   outDir: "../dist",
+  base: "/",
 
   ignoreDeadLinks: true,
 
-  // ✅ Favicon + Fonts go here, not in themeConfig
+  // ✅ Favicon + Fonts must go here, not in themeConfig - I forgot the last time
   head: [
     // ["link", { rel: "icon", href: "/favicon.ico" }],
     ["link", { rel:"icon", type:"image/svg+xml", href: "/favicon.svg?v=1" }],
