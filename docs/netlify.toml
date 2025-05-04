@@ -5,6 +5,5 @@ SECRETS_SCAN_OMIT_KEYS = "VITE_GITLAB_USER_ID,VITE_GITLAB_PROJECT_ID"
    publish = "dist"
    command = "vitepress build docs"
 
-
 [context.deploy-preview]
   command = "vitepress build"
