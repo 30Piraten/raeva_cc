@@ -68,6 +68,7 @@ function getTitleFromFile(filepath: string): string {
 
 // CONFIG DEFINITIONS
 export default defineConfig({
+
   lang: "en-US",
   title: "rayvah.cc",
   description: "systems-minded product and infrastructure engineer",
@@ -80,6 +81,7 @@ export default defineConfig({
   // ✅ Favicon + Fonts must go here, not in themeConfig - I forgot the last time
   head: [
     // ["link", { rel: "icon", href: "/favicon.ico" }],
+    // ["link", { rel: "stylesheet", href: "./theme/custom.css" }],
     ["link", { rel:"icon", type:"image/svg+xml", href: "/favicon.svg?v=1" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
     ["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }],

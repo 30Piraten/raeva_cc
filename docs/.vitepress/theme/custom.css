@@ -23,7 +23,7 @@
 :root {
   --vp-font-family-base: "Rubik", sans-serif;
 
-  --vp-c-brand: var(--color-accent-light); 
+  --vp-c-brand: var(--color-accent-light);
   --vp-c-brand-light: var(--color-accent-light);
   --vp-c-brand-dark: var(--color-accent-light);
 
@@ -38,20 +38,20 @@
   --vp-c-border: var(--color-border-light);
   --vp-c-divider: #dcd6bc;
 
-    /* Footer - LIGHT */
+  /* Footer - LIGHT */
   /* .VPFooter {
     background-color: white;
   } */
 
-    /* LinkedIn button (brand) */
+  /* LinkedIn button (brand) */
   .VPButton.medium.brand {
-    background-color: var(--color-accent-light);
+    background-color: white;
     color: var(--color-text-dark);
     border: 2px solid rgb(17, 17, 195);
   }
 
   .VPButton.medium.brand:hover {
-    background-color: white;
+    background-color: var(--color-accent-light);
     color: var(--color-bg-dark);
   }
 
@@ -83,10 +83,10 @@
   .VPButton.medium.brand,
   .VPButton.medium.alt {
     transition:
-      background-color 0.25s ease,
-      color 0.25s ease,
-      border-color 0.25s ease,
-      transform 0.15s ease;
+            background-color 0.25s ease,
+            color 0.25s ease,
+            border-color 0.25s ease,
+            transform 0.15s ease;
   }
 
   /* Optional: slight lift on hover */
@@ -131,7 +131,7 @@
 .dark {
   --vp-c-brand: var(--color-accent);
   --vp-c-brand-light: var(--color-accent);
-  --vp-c-brand-dark: var(--color-extra-light);
+  --vp-c-brand-dark: var(--color-text-light);
 
   --vp-c-bg: var(--color-bg-dark);
   --vp-c-bg-soft: var(--color-surface-dark);
@@ -150,8 +150,8 @@
     background-color: white;
   } */
 
-    /* VPBUTTON TOKENS -- DARK */
-    /* LinkedIn button (brand) */
+  /* VPBUTTON TOKENS -- DARK */
+  /* LinkedIn button (brand) */
   .VPButton.medium.brand {
     background-color: #fdc57b;
     color: #1c1c1c;
@@ -178,18 +178,14 @@
   /* Shared button transition */
   .VPButton.medium.brand,
   .VPButton.medium.alt {
-    transition:
-      background-color 0.25s ease,
-      color 0.25s ease,
-      border-color 0.25s ease,
-      transform 0.15s ease;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
   }
 
   /* Optional: slight lift on hover */
   .VPButton.medium.brand:hover,
-  .VPButton.medium.alt:hover {
-    transform: translateY(-1px);
-  }
+.VPButton.medium.alt:hover {
+  transform: translateY(-1px);
+}
 
   /* Optional: slight press on active */
   .VPButton.medium.brand:active,
@@ -207,7 +203,7 @@
     background-color: rgba(253, 197, 123, 0.2);
     border-color: #d6a04a;
     color: #d6a04a;
-  } 
+  }
 
   .external-link {
     color: white;
@@ -220,7 +216,7 @@
     background-color: #ede4c8;
     color: #1c1c1c;
   }
-  
+
   .vp-hero {
     background: linear-gradient(to right, #fdc57b, #fbf2d5);
   }
@@ -237,7 +233,7 @@
 
   /* Hover styles for all sidebar levels */
   .VPSidebarItem[class*="level-"] .text[data-v-6a08edb6]:hover {
-    color: var(--color-accent) !important;
+    color: var(--color-accent);
   }
 
   VPSidebarItem.level-0.is-active > .item .link > .text[data-v-6a08edb6],
@@ -266,51 +262,103 @@
     color: var(--color-accent);
   }
 
-  .VPNavBarMenuLink[data-v-30392939]:hover {
+  /*.VPNavBarMenuLink[data-v-30392939]:hover {*/
+  /*  color: var(--color-accent);*/
+  /*}*/
+
+  /*.VPNavBarMenuLink.active[data-v-30392939] {*/
+  /*  color: var(--color-accent);*/
+  /*}*/
+
+  /*.title[data-v-3f1116dd] {*/
+  /*  color: var(--color-accent);*/
+  /*}*/
+
+  /*.clip[data-v-8b467706], .name[data-v-8b467706] {*/
+  /*  color: var(--color-accent);*/
+  /*  -webkit-text-fill-color: var(--color-accent);*/
+  /*}*/
+
+  /*.vp-doc p {*/
+  /*  color: var(--color-text-dark);*/
+  /*}*/
+
+  /*.vp-doc a {*/
+  /*  color: var(--color-text-dark);*/
+  /*  text-decoration: none;*/
+  /*}*/
+
+  /*.vp-doc a:hover {*/
+  /*  color: var(--color-accent);*/
+  /*}*/
+
+  /*.form-intro[data-v-c75d1ffa] {*/
+  /*  color: var(--color-text-light);*/
+  /*}*/
+
+  /*h2[data-v-bd871355] {*/
+  /*  color: var(--color-accent);*/
+  /*}*/
+
+  /*button.DocSearch.DocSearch-Button:hover {*/
+  /*  border: 1px solid var(--color-accent);*/
+  /*}*/
+
+  /*.search-bar[data-v-2c3537cd] {*/
+  /*  color: var(--color-text-dark);*/
+  /*}*/
+
+  /*new configs works here;*/
+
+  .VPNavBarMenuLink.active[data-v-69712882], .VPNavBarMenuLink[data-v-69712882]:hover {
     color: var(--color-accent);
   }
 
-  .VPNavBarMenuLink.active[data-v-30392939] {
-    color: var(--color-accent);
-  }
-
-  .title[data-v-3f1116dd] {
-    color: var(--color-accent);
-  }
-
-  .clip[data-v-8b467706], .name[data-v-8b467706] {
-    color: var(--color-accent);
+  .VPHero.has-image .name[data-v-b153577d] {
+    /*color: var(--color-accent);*/
     -webkit-text-fill-color: var(--color-accent);
   }
 
-  .vp-doc p {
-    color: var(--color-text-dark);
-  }
-
-  .vp-doc a {
-    color: var(--color-text-dark);
-    text-decoration: none;
-  }
-
-  .vp-doc a:hover {
-    color: var(--color-accent);
-  }
-
-  .form-intro[data-v-c75d1ffa] {
-    color: var(--color-text-light);
-  }
-
-  h2[data-v-bd871355] {
-    color: var(--color-accent);
-  }
-
-  button.DocSearch.DocSearch-Button:hover {
+  .DocSearch-Button:hover {
     border: 1px solid var(--color-accent);
   }
 
-  .search-bar[data-v-2c3537cd] {
+  .VPSidebarItem.level-1.is-active>.item .link>.text[data-v-8e47a76e] {
+    color: var(--color-accent);
+  }
+
+  .outline-link[data-v-495baae0]:hover, .outline-link.active[data-v-495baae0] {
+    color: var(--color-accent);
+  }
+
+  .title[data-v-6b338ebd] {
+    color: var(--color-accent);
+  }
+
+  .pager-link[data-v-6b338ebd] {
+    color: var(--color-accent);
+  }
+
+  .pager-link[data-v-6b338ebd]:hover, .pager-link.active[data-v-6b338ebd] {
+    border-color: var(--color-accent);
+  }
+
+  .project-name[data-v-9cc4e567]:hover {
+    color: var(--color-accent);
+  }
+
+  .project-name[data-v-9cc4e567] {
     color: var(--color-text-dark);
   }
+
+  .VPSwitch[data-v-b2f028cf], .VPSwitch[data-v-b2f028cf]:hover {
+    border-color: var(--color-accent);
+  }
+
+  .VPSwitch[data-v-b2f028cf] {
+    background-color: var(--color-accent);
+  }
+
 }
 
 
@@ -319,7 +367,5 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*background-color: pink;*/
 }
-/* p {
-  font-size: 1em;
-  } */
