@@ -1,21 +1,23 @@
 ---
-title: "Rabbit-Hole Inference System (RHI)"
+title: "Rabbit-Hole Inference Algorithm (RHIA)"
 description: "An adaptive compass that learns from behavior, not bio."
 date: "2025-05-3"
-tags: ["logic", "design", "buddy.me", "rhi"]
+tags: ["logic", "design", "buddy.me", "rhia"]
 ---
 
-# Rabbit-Hole Inference System (RHI)
+# Rabbit-Hole Inference Algorithm (RHIA)
 
-## **I. First Principles of RHI**
+## **I. First Principles of RHIA**
 
-At the base level, RHI tries to answer:
+At the base level, RHIA tries to answer:
 
 > *“What can this user’s behavior tell us about how they approach life?”*
 
 So connection here is (or can be) reduced to a **shared orientation toward struggle and effort.**
 
 ### The three base axioms I am looking at are:
+
+There are others, but for now, these are my focus. 
 
 1. **Behavioral patterns > stated preferences**
 2. **Struggle rhythm > skill or speed**
@@ -59,7 +61,7 @@ This gives us:
 * Whether they seek help (nudges)
 * Their *tempo* and *tendencies*
 
-## **III. The Inference Engine (RHA Core)**
+## **III. The Inference Engine (RHIA Core)**
 
 ### 1. Normalize
 
@@ -120,7 +122,7 @@ Graph search helps:
 
 ## TL;DR:
 
-* The Rabbit-Hole Algorithm is a **trait-based pattern inference system**
+* The Rabbit-Hole Inference Algorithm is a **trait-based pattern inference system**
 * It does **symbolic reasoning** (Prolog-style) early, and evolves to **ML classifiers** with more data
 * It builds *human stories from struggle*, not just tags or bios
 * It matches not by **likes**, but by **lived effort**
