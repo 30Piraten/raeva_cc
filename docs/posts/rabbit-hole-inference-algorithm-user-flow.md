@@ -1,15 +1,15 @@
 ---
 title: "Buddy.me: Simulated User Flow"
-description: "A simulated user flow for Buddy.me, showcasing the Rabbit-Hole Algorithm (RHA) in action."
+description: "Simulated user flow for Buddy.me, showcasing the Rabbit-Hole Inference Algorithm (RHIA)."
 date: "2025-05-01"
-tags: ["logic", "design", "buddy.me", "user-flow"]
+tags: ["logic", "design", "buddy.me", "user-flow", "rhia"]
 ---
 
-## **Simulated User Flow — Rabbit-Hole Algorithm (RHA) in Action**
+## **Simulated User Flow — Rabbit-Hole Inference Algorithm (RHIA)**
 
 Let’s take a user named **Ayo**, who just joined Buddy.me.
 
-### **1. User Onboarding → Enters Roadmap**
+## **1. User Onboarding → Enters Roadmap**
 
 Ayo chooses:
 **Roadmap**: *“Rebuild My Morning Routine”*
@@ -22,9 +22,7 @@ Quests:
 
 Buddy.me *does not ask Ayo about preferences*, colors, personality, or even if he’s a “morning person.” It observes.
 
----
-
-### **2. Data Signals Begin**
+## **2. Data Signals Begin**
 
 Ayo:
 
@@ -38,16 +36,14 @@ This data generates a *trajectory vector*:
 [Q1: delayed], [Q2: fast], [Q3: retried]
 ```
 
-RHA flags:
+RHIA flags:
 
 * Commitment is mid-high
 * Weakness: digital discipline
 * Strength: introspective tasks
 * Pattern: pushes through friction
 
----
-
-### **3. Checkpoint Matchmaking (Core of RHA)**
+## **3. Checkpoint Matchmaking (Core of RHIA)**
 
 Buddy.me finds **Nina**, another user who:
 
@@ -68,7 +64,7 @@ They meet. Their roadmaps *merge*:
 
 ---
 
-### **4. Emergence of Connection**
+## **4. Emergence of Connection**
 
 Ayo sees Nina use a journaling method he hadn’t thought of
 Nina sees Ayo’s retry messages and feels less alone
@@ -78,7 +74,7 @@ They’re connected anyway.
 
 ---
 
-This is the power of RHA:
+This is my goal with RHIA:
 
 * *Infer* through **struggle rhythm**
 * *Match* through **overlap in effort**
