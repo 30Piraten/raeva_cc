@@ -107,23 +107,22 @@ export default defineConfig({
 
     // Add assets handling plugin
     plugins: [
-      {
-        name: 'vitepress-images-resolver',
-        enforce: 'pre',
-        resolveId(id) {
-          if (id.startsWith('/images/')) {
-            // Strip leading slash to get correct relative path
-            // const imagePath = id.replace(/^\/+/, '');
-            // return resolve(__dirname, '..', imagePath);
-            return {
-              id: resolve(__dirname, "../public", id),
-              external: true
-            };
-          }
-          return null;
-        }
-      }
-
+      // {
+      //   name: 'vitepress-images-resolver',
+      //   enforce: 'pre',
+      //   resolveId(id) {
+      //     if (id.startsWith('/images/')) {
+      //       // Strip leading slash to get correct relative path
+      //       // const imagePath = id.replace(/^\/+/, '');
+      //       // return resolve(__dirname, '..', imagePath);
+      //       return {
+      //         id: resolve(__dirname, "../public", id),
+      //         external: true
+      //       };
+      //     }
+      //     return null;
+      //   }
+      // }
     ]
   },
   

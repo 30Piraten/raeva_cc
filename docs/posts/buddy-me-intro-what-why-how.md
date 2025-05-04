@@ -5,7 +5,7 @@ date: "2025-05-01"
 tags: ["logic", "design", "buddy.me", "roadmap"]
 ---
 
-## Buddy.me: What, Why, and How
+# Buddy.me: What, Why, and How
 
 > Buddy.me is not trying to solve relationship problem, neither does it claim to understand the human mind, it only wants to tackle and observe the connection between two people and build itself around it through inference.
 
