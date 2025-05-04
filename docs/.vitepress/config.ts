@@ -74,7 +74,7 @@ export default defineConfig({
 
   lastUpdated: true,
   outDir: "../dist",
-  base: "/",
+  // base: "/",
 
   ignoreDeadLinks: true,
 

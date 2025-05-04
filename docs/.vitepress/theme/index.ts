@@ -8,7 +8,4 @@ export default {
   enhanceApp({ app }) {
     app.component('ContactMe', ContactMe)
   },
-  layouts: {
-    NotFound
-  },
 }
