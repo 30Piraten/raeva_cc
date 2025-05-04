@@ -1,5 +1,5 @@
 ---
-title: rayvah.cc | DX, design & infra
+title: Victor Raeva | Product, design & infra
 layout: home
 hero:
     name: Victor Raeva!
