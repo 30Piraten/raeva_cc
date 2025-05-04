@@ -73,8 +73,7 @@ export default defineConfig({
   description: "systems-minded product and infrastructure engineer",
 
   lastUpdated: true,
-  outDir: "../dist",
-  // base: "/",
+  // outDir: "../dist",
 
   ignoreDeadLinks: true,
 
