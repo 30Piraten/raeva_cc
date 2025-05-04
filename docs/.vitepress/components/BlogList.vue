@@ -9,7 +9,7 @@ import ExternalLink from './ExternalLink.vue';
 
 // Import raw markdown files
 const postFiles = Object.entries(
-  import.meta.glob('/posts/*.md', { eager: true, as: 'raw' })
+  import.meta.glob('/posts/*.md', { eager: true, query: '?raw', import: 'default' })
 );
 
 // Helper: parse frontmatter manually

@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { resolve } from 'node:path';
 
 import fs from 'fs'
 import path from 'path'
@@ -87,10 +88,57 @@ export default defineConfig({
       },
     ],
   ],
+
+  // Add Vite-specific configuration
+  vite: {
+    resolve: {
+      alias: {
+        '/images': resolve(__dirname, '../public/images')
+      }
+    },
+    // Improve asset handling
+    build: {
+      assetsInlineLimit: 0, // Disable inlining assets as base64
+      rollupOptions: {
+        // Ensure the image handling is improved
+        onwarn(warning, warn) {
+          // Ignore specific warnings related to image imports if they occur
+          if (warning.code === 'UNRESOLVED_IMPORT' && warning.message.includes('/images/')) {
+            return
+          }
+          warn(warning)
+        }
+      }
+    },
+    // Add assets handling plugin
+    plugins: [
+      {
+        name: 'vitepress-images-resolver',
+        enforce: 'pre',
+        resolveId(id) {
+          if (id.startsWith('/images/')) {
+            return {
+              id: resolve(__dirname, '../public', id),
+              external: true
+            }
+          }
+          return null
+        }
+      }
+    ]
+  },
   
   themeConfig: {
     logo: "/logo.png",
     siteTitle: "rayvah",
+
+    notFound: {
+      code: '404',
+      title: 'Oops. Ich habe letztes Jahr den Beer-Pong-Wettbewerb in Texas gewonnen.',
+      quote: 'The last time I was here, I won a riffle contest in Zermatt!',
+      linkLabel: 'Lets go back home',
+      linkText: 'Return home frendo!',
+    },
 
     nav: [
       { text: "Notes", link: "/posts" },
