@@ -3,7 +3,7 @@
 :root {
   /* Brand accent */
   --color-accent: #fdc57b;
-  --color-accent-light: rgb(22, 22, 180);
+  --color-accent-light: #3451b2;
 
   /* Light Theme Colors */
   --color-bg-light: #ececec;
@@ -101,12 +101,27 @@
     transform: translateY(0px) scale(0.98);
   }
 
+  .VPSwitch[data-v-8e0b3638] {
+    background-color: var(--color-accent-light);
+    border-color: var(--color-accent-light);
+  }
+
+  /*make changes here*/
+  .vp-doc a {
+    text-decoration: none;
+  }
+
+  .form-intro[data-v-c75d1ffa] {
+    color: var(--color-text-light);
+  }
+
   .external-link {
     color: var(--color-text-light);
   }
-  .external-link:hover {
-    color: var(--color-accent-light);
-  }
+
+  /*.external-link:hover {*/
+  /*  color: var(--color-accent-light);*/
+  /*}*/
 
   span.link-text:hover, a.outline-link:hover {
     color: var(--color-accent-light);
@@ -196,6 +211,7 @@
 
   .external-link {
     color: white;
+    text-decoration: none;
   }
   .external-link:hover {
     color: var(--color-accent);
@@ -233,11 +249,58 @@
     color: var(--color-accent);
   }
 
+  .VPSwitch[data-v-8e0b3638] {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  .pager-link[data-v-3f1116dd] {
+    border: 1px solid var(--color-text-dark);
+  }
+
+  .pager-link[data-v-3f1116dd]:hover {
+    border: 1px solid var(--color-accent);
+  }
+
   a.outline-link[data-v-6f596f9f]:hover {
     color: var(--color-accent);
   }
 
   .VPNavBarMenuLink[data-v-30392939]:hover {
+    color: var(--color-accent);
+  }
+
+  .VPNavBarMenuLink.active[data-v-30392939] {
+    color: var(--color-accent);
+  }
+
+  .title[data-v-3f1116dd] {
+    color: var(--color-accent);
+  }
+
+  .clip[data-v-8b467706], .name[data-v-8b467706] {
+    color: var(--color-accent);
+    -webkit-text-fill-color: var(--color-accent);
+  }
+
+  .vp-doc p {
+    color: var(--color-text-dark);
+  }
+
+  .vp-doc a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+  }
+
+  .vp-doc a:hover {
+    color: var(--color-accent);
+  }
+
+  .form-intro[data-v-c75d1ffa] {
+    color: var(--color-text-light);
+  }
+
+  h2[data-v-bd871355] {
     color: var(--color-accent);
   }
 

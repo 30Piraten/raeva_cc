@@ -5,9 +5,9 @@ import ExternalLink from "./ExternalLink.vue"
 
 <template>
   <div v-for="bud in buddy" :key="bud.url">
-    <ExternalLink class="external-link" href="bud.url" target="_self">
+    <ExternalLink class="external-link" :href="bud.url" target="_self">
         <h2>{{ bud.title }}</h2>
-        <p v-if="bud.description">{{ bud.description }}</p>
+        <p v-if="bud.description" class="bud">{{ bud.description }}</p>
         <img v-if="bud.image" :src="bud.image" alt="BuddyMe Image"  width="100" height="100"/>
     </ExternalLink>
     
