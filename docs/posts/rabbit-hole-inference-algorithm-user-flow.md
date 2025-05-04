@@ -5,7 +5,7 @@ date: "2025-05-01"
 tags: ["logic", "design", "buddy.me", "user-flow", "rhia"]
 ---
 
-## **Simulated User Flow — Rabbit-Hole Inference Algorithm (RHIA)**
+# Simulated User Flow — Rabbit-Hole Inference Algorithm (RHIA)
 
 Let’s take a user named **Ayo**, who just joined Buddy.me.
 
