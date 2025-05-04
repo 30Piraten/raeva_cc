@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
-import { resolve } from 'node:path';
-
+import { resolve } from 'path';
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -33,23 +32,27 @@ function getPostsSidebar(dir: string = 'posts'): SidebarGroup[] {
     console.warn(`Posts directory not found: ${postsDir}`)
     return []
   }
-  
-  // Get all markdown files and convert to sidebar items
-  const files = fs
-    .readdirSync(postsDir)
-    .filter(file => file.endsWith('.md'))
-    .map(file => ({
-      text: getTitleFromFile(path.resolve(postsDir, file)),
-      link: `/${dir}/${file.replace('.md', '')}`,
-    }))
 
-  // Return in the correct format VitePress expects
-  return [
-    {
-      text: 'Posts',
-      items: files
-    }
-  ]
+  try {
+    // Get all markdown files and convert to sidebar items
+    const files = fs
+      .readdirSync(postsDir)
+      .filter(file => file.endsWith('.md'))
+      .map(file => ({
+        text: getTitleFromFile(path.resolve(postsDir, file)),
+        link: `/${dir}/${file.replace('.md', '')}`,
+      }))
+
+    // Return in the correct format VitePress expects
+    return [
+      {
+        text: 'Posts',
+        items: files
+      }
+    ]
+  } catch (err) {
+    console.log(err.message, "Error generating posts sidebar")
+  }
 }
 
 function getTitleFromFile(filepath: string): string {
@@ -100,17 +103,8 @@ export default defineConfig({
     // Improve asset handling
     build: {
       assetsInlineLimit: 0, // Disable inlining assets as base64
-      rollupOptions: {
-        // Ensure the image handling is improved
-        onwarn(warning, warn) {
-          // Ignore specific warnings related to image imports if they occur
-          if (warning.code === 'UNRESOLVED_IMPORT' && warning.message.includes('/images/')) {
-            return
-          }
-          warn(warning)
-        }
-      }
     },
+
     // Add assets handling plugin
     plugins: [
       {
@@ -118,14 +112,18 @@ export default defineConfig({
         enforce: 'pre',
         resolveId(id) {
           if (id.startsWith('/images/')) {
+            // Strip leading slash to get correct relative path
+            // const imagePath = id.replace(/^\/+/, '');
+            // return resolve(__dirname, '..', imagePath);
             return {
-              id: resolve(__dirname, '../public', id),
+              id: resolve(__dirname, "../public", id),
               external: true
-            }
+            };
           }
-          return null
+          return null;
         }
       }
+
     ]
   },
   

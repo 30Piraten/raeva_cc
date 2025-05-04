@@ -13,7 +13,7 @@ import ExternalLink from './ExternalLink.vue';
   </div>
 </template>
 
-<style scoped>
+<style>
 h1 {
   color: var(--color-dark);
   text-align: center;

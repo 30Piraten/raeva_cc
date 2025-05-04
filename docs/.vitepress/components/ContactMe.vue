@@ -41,7 +41,7 @@ onMounted(() => {
           </svg>
         </div>
         <h3>Message Sent!</h3>
-        <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+        <p class="form-intro">Thank you for reaching out. I'll get back to you as soon as possible.</p>
         <button @click="submitSuccess = false" class="button button-secondary">
           Send another message
         </button>
@@ -183,7 +183,7 @@ onMounted(() => {
 }
 
 .form-intro {
-  color: #718096;
+  color: black;
   margin-bottom: 2rem;
   font-size: 0.95rem;
   line-height: 1.5;
