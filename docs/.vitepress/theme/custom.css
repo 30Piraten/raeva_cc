@@ -90,10 +90,26 @@
   }
 
   /* Optional: slight lift on hover */
-  .VPButton.medium.brand:hover,
+
   .VPButton.medium.alt:hover {
     transform: translateY(-1px);
   }
+
+  .VPButton.medium.brand {
+    background-color: #5672cd;
+    color: var(--color-text-dark);
+  }
+
+  .VPButton.medium.brand:hover {
+    background-color: var(--color-accent-light);
+    color: var(--color-text-dark);
+  }
+
+  .VPSwitch[data-v-b2f028cf] {
+    border-color: var(--color-accent-light);
+    background-color: var(--color-accent-light);
+  }
+
 
   /* Optional: slight press on active */
   .VPButton.medium.brand:active,
@@ -111,20 +127,8 @@
     text-decoration: none;
   }
 
-  .form-intro[data-v-c75d1ffa] {
-    color: var(--color-text-light);
-  }
-
   .external-link {
     color: var(--color-text-light);
-  }
-
-  /*.external-link:hover {*/
-  /*  color: var(--color-accent-light);*/
-  /*}*/
-
-  span.link-text:hover, a.outline-link:hover {
-    color: var(--color-accent-light);
   }
 }
 
@@ -262,52 +266,6 @@
     color: var(--color-accent);
   }
 
-  /*.VPNavBarMenuLink[data-v-30392939]:hover {*/
-  /*  color: var(--color-accent);*/
-  /*}*/
-
-  /*.VPNavBarMenuLink.active[data-v-30392939] {*/
-  /*  color: var(--color-accent);*/
-  /*}*/
-
-  /*.title[data-v-3f1116dd] {*/
-  /*  color: var(--color-accent);*/
-  /*}*/
-
-  /*.clip[data-v-8b467706], .name[data-v-8b467706] {*/
-  /*  color: var(--color-accent);*/
-  /*  -webkit-text-fill-color: var(--color-accent);*/
-  /*}*/
-
-  /*.vp-doc p {*/
-  /*  color: var(--color-text-dark);*/
-  /*}*/
-
-  /*.vp-doc a {*/
-  /*  color: var(--color-text-dark);*/
-  /*  text-decoration: none;*/
-  /*}*/
-
-  /*.vp-doc a:hover {*/
-  /*  color: var(--color-accent);*/
-  /*}*/
-
-  /*.form-intro[data-v-c75d1ffa] {*/
-  /*  color: var(--color-text-light);*/
-  /*}*/
-
-  /*h2[data-v-bd871355] {*/
-  /*  color: var(--color-accent);*/
-  /*}*/
-
-  /*button.DocSearch.DocSearch-Button:hover {*/
-  /*  border: 1px solid var(--color-accent);*/
-  /*}*/
-
-  /*.search-bar[data-v-2c3537cd] {*/
-  /*  color: var(--color-text-dark);*/
-  /*}*/
-
   /*new configs works here;*/
 
   .VPNavBarMenuLink.active[data-v-69712882], .VPNavBarMenuLink[data-v-69712882]:hover {
@@ -358,7 +316,6 @@
   .VPSwitch[data-v-b2f028cf] {
     background-color: var(--color-accent);
   }
-
 }
 
 
