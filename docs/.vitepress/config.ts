@@ -53,7 +53,8 @@ function getPostsSidebar(dir: string = 'posts'): SidebarGroup[] {
     ]
   } catch (err) {
     console.log(err.message, "Error generating posts sidebar")
-  }
+  } 
+  return []; // Ensure a return value in case of an error
 }
 
 function getTitleFromFile(filepath: string): string {
@@ -127,7 +128,8 @@ export default defineConfig({
       { text: "OSS Contributions", link: "/oss" },
       { text: "Buddy.me", link: "/buddy" },
       { text: "Projects", link: "/projects" },
-      { text: "Contact Me", link: "/contact" },
+      {text: "About Me", link: "/aboutme"},
+      // { text: "Contact Me", link: "/contact" },
     ],
 
     socialLinks: [
