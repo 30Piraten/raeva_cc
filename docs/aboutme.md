@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 description: "Learn more about me, my background, and my interests."
-author: "Victor Ehikioya"
+author: "raeva"
 ---
 
 Design is fundamental to my interest in product thinking, especially when examined through first principles. I often think of design like an onion; each layer represents a contract, and as you peel them away, you uncover the core of the original system: its purpose and the mental model it offers the user. How can this system be both extensible and expressive without becoming fragile? If we restructure this API or contract, what will the implications be for someone who didn’t design it? What is the relationship between this model and the next?
