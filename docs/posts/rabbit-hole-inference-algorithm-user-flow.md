@@ -62,8 +62,6 @@ They meet. Their roadmaps *merge*:
 * XP rewards tied to both succeeding
 * Support nudges encouraged at pain points (e.g., Q3-like steps)
 
----
-
 ## **4. Emergence of Connection**
 
 Ayo sees Nina use a journaling method he hadn’t thought of
@@ -71,8 +69,6 @@ Nina sees Ayo’s retry messages and feels less alone
 
 Both don’t know each other’s favorite color.
 They’re connected anyway.
-
----
 
 This is my goal with RHIA:
 
