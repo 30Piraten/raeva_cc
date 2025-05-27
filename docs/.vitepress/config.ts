@@ -3,7 +3,6 @@ import { resolve } from 'path';
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import {loadavg} from "node:os";
 
 // Create __dirname equivalent in ES modules
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -12,11 +11,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 interface SidebarItem {
   text: string;
   link: string;
-}
-
-// Type for sidebar structure
-interface Sidebar {
-  [path: string]: SidebarGroup[];
 }
 
 interface SidebarGroup {
@@ -124,26 +118,24 @@ export default defineConfig({
     },
 
     nav: [
+      { text: "Design", link: "/design" },
       { text: "Notes", link: "/posts" },
-      { text: "OSS Contributions", link: "/oss" },
-      { text: "Buddy.me", link: "/buddy" },
-      { text: "Projects", link: "/projects" },
-      {text: "About Me", link: "/aboutme"},
-      // { text: "Contact Me", link: "/contact" },
+      { text: "OSS", link: "/oss" },
+      { text: "Backend", link: "/backend" },
     ],
 
     socialLinks: [
       { icon: "github", link: "https://github.com/30Piraten/" },
       { icon: "linkedin", link: "https://www.linkedin.com/in/evictor3/" },
-      { icon: "twitter", link: "https://x.com/raeva33" }
-      // {
-      //   icon: {
-      //     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      //         <path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z" />
-      //       </svg>`
-      //   },
-      //   link: "mailto:raeva303@gmail.com"
-      // }
+      { icon: "twitter", link: "https://x.com/raeva33" },
+      {
+        icon: {
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z" />
+            </svg>`
+        },
+        link: "mailto:raeva303@gmail.com"
+      }
     ],
 
     // ✅ Footer config
