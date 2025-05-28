@@ -1,13 +1,15 @@
 ---
 title: Victor Raeva | Product, design & infra
 layout: home
-hero:
+# hero:
 ---
 
-Design is fundamental to my interest in product thinking, especially when examined through first principles. I often think of design like an onion; each layer represents a contract, and as you peel them away, you uncover the core of the original system: its purpose and the mental model it offers the user. How can this system be both extensible and expressive without becoming fragile? If we restructure this API or contract, what will the implications be for someone who didn’t design it? What is the relationship between this model and the next?
+For me, design begins with a pen and paper, nothing more. If I can sketch it and compose a string of sentences that give it breadth, then I have fulfilled the first layer of what design means to me. 
+There are no colors, 2×2 pixel grids, or glossy UI tricks. Because design, at its core, is plain and die-hard simple. But what makes a user feel they have come to the right place? What gives a product that click—that sense of fit? 
 
-For me, design is not just about click trees or deciding which visual style should be applied to a button or single-page application (SPA) to make it appealing. It’s about the modular representation of a contract, where components are wrapped with intent. When you look at Vue's Single File Components (SFC), you glimpse what I mean. Every detail of the code, whether discrete or not, evolves with this intent, transitioning from affordances to a conceptual image. I constantly ask what should be removed for simplicity and clarity, and what must be added for better understanding.
+One might think it is the UI, but UI is not design—it is just a layer. You can have the most beautiful UI and still fail on the backend. I like to do both, or at least try to understand both. 
+I am not just a designer or solely a backend engineer. I start with an idea and try to bring that to life with cherry-picked resources that help me work fast and light. All for one purpose—or at the very least, to solve a real pain point and maybe build something that lasts.
 
-Behind the scenes, the design intent must align with the business logic and directly connect with how users interact with the application or product. If you peel the onion further, you’ll realise that the code is, in fact, the product, and users are the developers who must evaluate the relevance of this intent to the business logic.
+Design is not what is shiny and the buzz of the week. It is a concept wrapped in clarity and driven by need. Ultimately, it is about understanding the user's goal. In short, design is Apple + IDEO + systems thinking. Built with intention, measured with empathy, and delivered with care.
 
-I often break this down into affordance blocks and wireframe each block to its respective layer; sometimes the intent is obvious from the onset, while at other times it may be vague. This is what design means to me. My approach involves observation—using no code, no complex settings, just a pen and paper, and thoughtful consideration of how intent should be conveyed to the user with the tools available to me.
+For each design, I commit myself to—components, a flow, or a Product. I revert back to the basics and ask: What does the user want to see, and how do I bring that to life—simply, clearly—while solving their pain? This is what design means to me. Nothing else.
