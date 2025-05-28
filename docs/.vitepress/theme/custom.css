@@ -130,6 +130,14 @@
   .external-link {
     color: var(--color-text-light);
   }
+  /* changes to home page */
+  .container[data-v-bcd21a27] {
+    margin-top: 5.7em;
+  }
+  
+  .vp-doc h1 {
+    margin-bottom: 1.5em;
+  }
 }
 
 .dark {
@@ -187,9 +195,9 @@
 
   /* Optional: slight lift on hover */
   .VPButton.medium.brand:hover,
-.VPButton.medium.alt:hover {
+  .VPButton.medium.alt:hover {
   transform: translateY(-1px);
-}
+  }
 
   /* Optional: slight press on active */
   .VPButton.medium.brand:active,
@@ -303,6 +311,7 @@
 
   .project-name[data-v-9cc4e567]:hover {
     color: var(--color-accent);
+    font-size: 1.5em;
   }
 
   .project-name[data-v-9cc4e567] {
@@ -316,6 +325,65 @@
   .VPSwitch[data-v-b2f028cf] {
     background-color: var(--color-accent);
   }
+
+  /* new changes */
+  .vp-doc a {
+    color: var(--color-accent);
+  }
+
+  .vp-doc h1 {
+    margin-bottom: 1.5em;
+  }
+
+  .dark .dt {
+    color: var(--color-accent);
+  }
+
+  .load-button[data-v-f3623693] {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+  }
+
+  .load-button[data-v-f3623693]:hover {
+    background-color: var(--color-accent);
+  }
+
+  /* changes to design page */
+  .meaning[data-v-4324ee8b] {
+    color: var(--color-text-dark);
+    text-decoration: underline wavy var(--color-accent);
+  }
+
+  .slug[data-v-4324ee8b] {
+    color: var(--color-text-dark);
+  }
+
+  /* .e-link:hover .e_top[data-v-4324ee8b] {
+    transform: translateY(-0.30em);
+    border-radius: 0.4em;
+    box-shadow:  -2px -2px 1px var(--color-accent), 2px 2px 1px;
+  } */
+
+  .e-link .e_top[data-v-4324ee8b] {
+    background-color: var(--color-accent);
+  }
+
+  .e-link:hover .e_top[data-v-4324ee8b] {
+    transform: translateY(-0.30em);
+    border-radius: 0.4em;
+    box-shadow:  -2px -2px 1px var(--color-surface-light), 2px 2px 1px;
+  }
+
+  .container[data-v-bcd21a27] {
+    margin-top: 5.7em;
+  }
+
+  /* @media (min-width: 960px) {
+    .VPContent[data-v-55215258] {
+        padding-top: var(--vp-nav-height);
+        margin-top: 15em;
+    }
+  } */
 }
 
 

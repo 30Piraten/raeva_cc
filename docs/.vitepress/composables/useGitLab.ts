@@ -53,11 +53,6 @@ export function useGitLab(projectId: string, userId?: string) {
       // Get the issues I'm involved with
       let issuesData: any[] = [];
 
-      // 
-      // 
-      // 
-
-
       if (userId) {
         // First fetch issues assigned to me
         const assigneeResponse = await fetch(
