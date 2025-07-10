@@ -141,7 +141,7 @@ export default defineConfig({
     // ✅ Footer config
     footer: {
       message: "mit liebe gebaut",
-      copyright: "Copyright ©️ 2025–present | Victor Raeva",
+      copyright: "Copyright ©️ 2025–present | Victor Ehikioya Raeva",
     },
 
     sidebar: {
