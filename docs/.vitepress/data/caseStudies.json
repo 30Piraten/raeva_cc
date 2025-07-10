@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Building a Scalable E-commerce Platform",
+        "description": "This case study explores the development of a scalable e-commerce platform using modern web technologies. It covers the architecture, design patterns, and technologies used to ensure high performance and reliability.",
+        "slug": "case-study-e-commerce-platform",
+        "platform": "mobile",
+        "links": [
+            {
+                "text": "Start Here",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "Figma",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "Framer",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "Thoughts",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "POC",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            }
+        ]
+    },
+    {
+        "title": "Building a Scalable E-commerce Platform",
+        "description": "This case study explores the development of a scalable e-commerce platform using modern web technologies. It covers the architecture, design patterns, and technologies used to ensure high performance and reliability.",
+        "slug": "case-study-e-commerce-platform",
+        "platform": "web",
+        "links": [
+            {
+                "text": "Start Here",
+                "url": "/contact"
+            },
+            {
+                "text": "Figma",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "Framer",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "Thoughts",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "POC",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            }
+        ]
+    },
+    {
+        "title": "Building a Scalable E-commerce Platform",
+        "description": "This case study explores the development of a scalable e-commerce platform using modern web technologies. It covers the architecture, design patterns, and technologies used to ensure high performance and reliability.",
+        "slug": "case-study-e-commerce-platform",
+        "platform": "mobile",
+        "links": [
+            {
+                "text": "Start Here",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "Figma",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "Framer",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "Thoughts",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            },
+            {
+                "text": "POC",
+                "url": "https://example.com/case-study/e-commerce-platform"
+            }
+        ]
+    }
+]
