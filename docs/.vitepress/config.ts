@@ -107,7 +107,7 @@ export default defineConfig({
   
   themeConfig: {
     logo: "/logo.png",
-    siteTitle: "Victor Raeva",
+    siteTitle: "Victor Ehikioya Raeva",
 
     notFound: {
       code: '404',
@@ -118,10 +118,10 @@ export default defineConfig({
     },
 
     nav: [
-      { text: "Design", link: "/design" },
+      // { text: "Design", link: "/design" },
       { text: "Notes", link: "/posts" },
       { text: "OSS", link: "/oss" },
-      { text: "Backend", link: "/backend" },
+      { text: "Projects", link: "/projects" },
     ],
 
     socialLinks: [
